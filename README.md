@@ -10,6 +10,8 @@ terminal 2: flwr run . distributed-setup --stream
 client:
 terminal 1: flower-supernode --insecure --superlink 100.101.155.80:9092 --node-config "partition-id=0 num-partitions=1"
 ( here ip can change check using tailscale)
+
+# INTRO
 FedCluster is a distributed system designed to harness underutilized consumer GPUs for federated learning.  
 It eliminates cloud dependency by enabling **peer-to-peer orchestration** with seamless device discovery and zero-configuration deployment.  
 
